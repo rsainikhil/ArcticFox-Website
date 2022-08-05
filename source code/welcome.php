@@ -11,14 +11,20 @@ if (!isset($_SESSION['username'])) {
 <!DOCTYPE html>
 <html lang="en">
 
-<link rel="stylesheet" type="text/css" href="login.css">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <?php echo "<h1>Welcome " . $_SESSION['username'] . "</h1>"; ?>
-    <a href="logout.php">Logout</a>
+    
+        <div class = "container">
+        <?php echo "<h1>Welcome " . $_SESSION['username'] . "</h1>"; ?>
+        <a href="logout.php">Logout</a>       <br> <br> <br>      <a href="index.html">let's go!</a>  
+        
+        </div>
+
 </body>
 </html>
